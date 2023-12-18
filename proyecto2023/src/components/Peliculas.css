@@ -1,0 +1,201 @@
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+  margin-left: 110px;
+
+}
+
+.column {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.column-peli {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pelicula-poster {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.title-container {
+  text-align: center;
+}
+
+.pelicula-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.no-movie{
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.favoritos-container {
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.favoritos-container h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.lista-favoritos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.lista-favoritos li {
+  flex: 1 1 200px; /* Distribuir en filas y ajustar el ancho de cada elemento */
+  margin-bottom: 15px;
+}
+
+.lista-favoritos img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.lista-favoritos img:hover {
+  transform: scale(1.05);
+}
+
+.lista-favoritos span {
+  display: block;
+  margin-top: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+.lista-favoritos {
+  list-style: none; /* Elimina los marcadores de lista */
+  padding: 0; /* Elimina el relleno por defecto de la lista */
+  margin: 0; /* Elimina los márgenes por defecto de la lista */
+}
+
+
+
+/* Estilos para el contenedor de los detalles de la película seleccionada */
+.detalles-pelicula {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Ocultar detalles por defecto */
+}
+
+.detalles-pelicula h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.detalles-pelicula p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Estilos para el botón "Cerrar" dentro del contenedor de detalles */
+.detalles-pelicula button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.detalles-pelicula button:hover {
+  background-color: #d32f2f;
+}
+
+/* Mostrar detalles solo cuando peliculaSeleccionada está presente */
+.detalles-pelicula.active {
+  display: block;
+}
+
+/*estilo pelicula*/
+
+@media (max-width: 480px) and (min-width:320px){
+
+  .container{
+    margin-left: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  .column{
+    margin: 5px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  .pelicula-poster {
+    width: 150px;
+    height: auto;
+
+  }
+  .pelicula-title {
+    font-size: 12px;
+    
+  }
+  .detalles-pelicula{
+    max-width: 270px;
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+  .detalles-pelicula button{
+    padding: 5px 5px;
+    font-size: 15px;
+  }
+  .favoritos-container{
+    
+    border-top: 0cm;
+    align-items: center;
+    text-align: center;
+    
+  }
+  .favoritos-container h2{
+    font-size: 15px;
+    
+  }
+  .lista-favoritos img {
+    width: 100px;
+    height: auto;
+    
+  }
+  .lista-favoritos span {
+    
+    margin-top: 10px;
+    font-size: 12px;
+    
+  }
+  
+
+}
+

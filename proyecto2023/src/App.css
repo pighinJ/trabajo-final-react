@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Estilos para la sección de detalles de la película */
+.detalle-pelicula {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .detalle-pelicula h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .detalle-pelicula p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .detalle-pelicula button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .detalle-pelicula button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para el botón de "Cerrar" */
+  .detalle-pelicula button.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #dc3545;
+    padding: 8px 16px;
+  }
+  
+  .detalle-pelicula button.cerrar:hover {
+    background-color: #bd2130;
+  }
